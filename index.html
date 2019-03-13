@@ -331,19 +331,22 @@
       
         
           
-            <h1 id="请假系统流程"><a href="#请假系统流程" class="headerlink" title="请假系统流程"></a>请假系统流程</h1><h2 id="1-信息注册流程"><a href="#1-信息注册流程" class="headerlink" title="1.信息注册流程"></a>1.信息注册流程</h2><blockquote>
+            <h1 id="请假系统流程"><a href="#请假系统流程" class="headerlink" title="请假系统流程"></a>请假系统流程</h1><h2 id="信息注册流程"><a href="#信息注册流程" class="headerlink" title="信息注册流程"></a>信息注册流程</h2><blockquote>
 <p>第一次打开小程序，无法判断对方身份是辅导员还是学生，进入身份选择界面，选择自己的身份是辅导员还是学生。</p>
 </blockquote>
-<h3 id="emsp-emsp-1-1学生注册流程"><a href="#emsp-emsp-1-1学生注册流程" class="headerlink" title="&emsp;&emsp;1.1学生注册流程"></a>&emsp;&emsp;1.1学生注册流程</h3><blockquote>
+<h3 id="emsp-emsp-学生注册流程"><a href="#emsp-emsp-学生注册流程" class="headerlink" title="&emsp;&emsp;学生注册流程"></a>&emsp;&emsp;学生注册流程</h3><blockquote>
 <p>在身份选择页面选择自己是学生，页面跳转到学生注册页面，学生在注册界面输入学号和教务系统密码进入，弹出微信授权（获取openid），绑定学院、班级（一个学生只能选择一个班级）、辅导员。</p>
 </blockquote>
-<h3 id="emsp-emsp-1-2辅导员注册流程"><a href="#emsp-emsp-1-2辅导员注册流程" class="headerlink" title="&emsp;&emsp;1.2辅导员注册流程"></a>&emsp;&emsp;1.2辅导员注册流程</h3><blockquote>
+<h3 id="emsp-emsp-辅导员注册流程"><a href="#emsp-emsp-辅导员注册流程" class="headerlink" title="&emsp;&emsp;辅导员注册流程"></a>&emsp;&emsp;辅导员注册流程</h3><blockquote>
 <p>在身份选择页面选择自己是辅导员，页面跳转到辅导员注册页面，辅导员在注册界面输入工号和密码进入，弹出微信授权（获取openid），绑定学院、班级（一个辅导员可以选择多个班级）。</p>
 </blockquote>
-<h2 id="2-学生请假流程"><a href="#2-学生请假流程" class="headerlink" title="2.学生请假流程"></a>2.学生请假流程</h2><blockquote>
+<h2 id="学生请假流程"><a href="#学生请假流程" class="headerlink" title="学生请假流程"></a>学生请假流程</h2><blockquote>
 <p>学生注册完成后，点击”首页”tabBar，系统会根据其openid判断身份，跳转进入请假页面，学生填入请假类型（事假、病假）、开始请假时间、结束请假时间、请假理由，点击提交后，系统推送模板消息给辅导员的微信，辅导员在管理端”首页”tabBar下可以看到待审批的请假请求，包括请假学生的请假条信息（请假类型、开始请假时间、结束请假时间、请假理由）、姓名、班级、联系电话。辅导员可以根据实际情况批准或者拒绝请假请求。</p>
 </blockquote>
-<h2 id="3-辅导员批假流程"><a href="#3-辅导员批假流程" class="headerlink" title="3.辅导员批假流程"></a>3.辅导员批假流程</h2><blockquote>
+<h2 id="学生续假流程"><a href="#学生续假流程" class="headerlink" title="学生续假流程"></a>学生续假流程</h2><blockquote>
+<p>和请假类似，学生如果有续假的需求时，要填入续假天数、续假理由等信息等待辅导员审核。</p>
+</blockquote>
+<h2 id="辅导员批假流程"><a href="#辅导员批假流程" class="headerlink" title="辅导员批假流程"></a>辅导员批假流程</h2><blockquote>
 <p>辅导员注册完成后，点击”首页”tabBar，系统会根据其openid判断身份，跳转到批假页面，辅导员可以看到当前需要处理的请假请求，可以对请假请求进行”批准”或”拒绝”操作。</p>
 </blockquote>
 <h3 id="emsp-emsp-1-1批准"><a href="#emsp-emsp-1-1批准" class="headerlink" title="&emsp;&emsp;1.1批准"></a>&emsp;&emsp;1.1批准</h3><blockquote>
@@ -352,7 +355,7 @@
 <h3 id="emsp-emsp-1-2拒绝"><a href="#emsp-emsp-1-2拒绝" class="headerlink" title="&emsp;&emsp;1.2拒绝"></a>&emsp;&emsp;1.2拒绝</h3><blockquote>
 <p>辅导员选择”拒绝”后，假条状态更改为”未批准”，学生端微信也将收到微信推送的模板消息小程序中显示请假被拒绝，不显示假条信息。</p>
 </blockquote>
-<h2 id="4-销假"><a href="#4-销假" class="headerlink" title="4.销假"></a>4.销假</h2><blockquote>
+<h2 id="销假"><a href="#销假" class="headerlink" title="销假"></a>销假</h2><blockquote>
 <p>当假条到期后，学生端微信将受到微信推送的模板消息，提示假条已经到期。假条状态更新为”已过期”</p>
 </blockquote>
 
